@@ -1,2 +1,33 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+@import 'colors';
+
+
+// .navbar {
+//   background-color: $ceramic;
+//   color: $latte;
+// }
+
+.body {
+  color: $ceramic;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-img {
+  background: url('assets/images/coffee_wood_medium2.jpeg') center center no-repeat;
+  background-size: cover;
+  height: 90%;
+  width: 90%;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,$slate,$latte);
+    opacity: .6;
+  }
+}
